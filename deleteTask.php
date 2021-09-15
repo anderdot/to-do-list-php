@@ -3,8 +3,7 @@ echo '<pre>';
 var_dump($_POST);
 echo '</pre>';
 
-$tasks = file_get_contents('tasks.json');
-$arrTasks = json_decode($tasks, true);
+$arrTasks = json_decode(file_get_contents('tasks.json'), true);
 
 $task = $_POST['task'];
 unset($arrTasks[$task]);

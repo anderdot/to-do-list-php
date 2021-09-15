@@ -36,17 +36,22 @@ body{
 
 .button{
     float: left;
+    margin-top: 7px;
     padding-left: 5px;
 }
 
 .btn-primary{
     background-color: #000;
     border-color: #000;
+}
+
+.btn{
     float: right;
     margin-top: -7px;
+    margin-right: -14px;
 }
 
 .alert{
+    text-align: justify;
     width: 450px;
-    display: inline-flex;
 }

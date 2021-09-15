@@ -37,16 +37,16 @@ if (file_exists('tasks.json')) {
             </div>
         </div>
     </form>
-    <form action="deleteTask.php" method="post" style="text-align: -webkit-center;">
-        <?php foreach ($tasks as $task => $tasks) : ?>
-            <div class="alert alert-primary" role="alert" type="submit">
+
+    <?php foreach ($tasks as $task => $tasks) : ?>
+        <form action="deleteTask.php" method="post" style="text-align: -webkit-center;">
+            <div class="alert alert-primary" role="alert" type="submit" style="display: inline-block;">
                 <?php echo $task ?>
                 <input type="hidden" name="task" value="<?php echo $task ?>">
-                <button type="submit" class="btn btn-primary">Concluído</button>
+                <button type="submit" class="btn btn-primary" style="float: right; margin-top: 0px; margin-right: -14px;">Concluído</button>
             </div>
-        <?php endforeach ?>
-    </form>
-    
+        </form>
+    <?php endforeach ?>
 </body>
 
 </html>
