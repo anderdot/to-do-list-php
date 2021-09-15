@@ -51,7 +51,17 @@ body{
     margin-right: -14px;
 }
 
+.check{
+    float: right; margin-top: 0px; margin-right: -14px; font-size: 10px;
+}
+
+.formTasks{
+    text-align: -webkit-center;
+}
+
 .alert{
+    display: inline-block;
     text-align: justify;
     width: 450px;
 }
+
