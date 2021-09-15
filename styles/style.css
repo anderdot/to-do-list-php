@@ -42,8 +42,11 @@ body{
 .btn-primary{
     background-color: #000;
     border-color: #000;
+    float: right;
+    margin-top: -7px;
 }
 
 .alert{
     width: 450px;
+    display: inline-flex;
 }
