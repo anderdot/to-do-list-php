@@ -1,6 +1,6 @@
 header{
     background-color: #000;
-    color: #fff;
+    color: #f1f1f1;
     padding-top: 10px;
     padding-bottom: 1px;
     margin-bottom: 40px;
@@ -28,6 +28,7 @@ body{
 
 .form-row{
     display: inline-flex;
+    margin-right: 15px;
 }
 
 .form-control{
@@ -62,6 +63,6 @@ body{
 .alert{
     display: inline-block;
     text-align: justify;
-    width: 450px;
+    width: 440px;
 }
 

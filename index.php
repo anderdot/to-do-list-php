@@ -24,34 +24,35 @@ if (file_exists('tasks.json')) {
         <span class="material-icons">
             <img src="img/outline_assignment_turned_in_white_24dp.png" width="64px" height="64">
         </span>
-        <p class="title"> Meus afazeres</p>
+        <p class="title">Meus afazeres</p>
     </header>
 
     <form class="form" action="newTask.php" method="post">
         <div class="form-row">
             <div class="form-group">
                 <input type="text" class="form-control" name="inputTask" id="inputTask" placeholder="Sua tarefa">
+                <input type="hidden" name="color" value="<?php echo random_int(0, 5); ?>">
             </div>
             <div class="button">
                 <button type="submit" class="btn btn-primary">Criar</button>
             </div>
+
         </div>
     </form>
 
-    <?php 
+    <?php
     $color = array(
         0 => "primary",
         1 => "secondary",
         2 => "success",
         3 => "danger",
         4 => "warning",
-        5 => "info",
-        6 => "dark"
+        5 => "info"
     );
-    
+
     foreach ($tasks as $task => $tasks) : ?>
         <form action="deleteTask.php" method="post" class="formTasks">
-            <div class="alert alert-<?php echo $color[random_int(0, 6)]; ?>" role="alert" type="submit">
+            <div class="alert alert-<?php echo $color[$tasks['color']]; ?>" role="alert" type="submit">
                 <?php echo $task ?>
                 <input type="hidden" name="task" value="<?php echo $task ?>">
                 <button type="submit" class="btn btn-primary check">✓</button>

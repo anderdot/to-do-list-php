@@ -1,7 +1,7 @@
 <?php
-echo '<pre>';
-var_dump($_POST);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($_POST);
+// echo '</pre>';
 
 $arrTasks = json_decode(file_get_contents('tasks.json'), true);
 

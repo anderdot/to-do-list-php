@@ -1,11 +1,20 @@
 {
-    "fazer mutias coisas que pegam mais de uma linha, \u00e9 serio \u00e9 muito grande mesmo, vamos testar se fica bugado. Buga n\u00e3o p\u00f4 :'(": {
-        "complete": false
+    "Seja bem vindo aos meus afazeres.": {
+        "color": "4"
     },
-    "isso \u00e9 uma linha certinho \u00e9 s\u00e9rio, verdade": {
-        "complete": false
+    "Caso deseje criar um novo afazer, basta escreve-lo na caixa acima e clicar em criar.": {
+        "color": "0"
     },
-    "fazer mutias coisas que pegam mais de uma linha, \u00e9 serio \u00e9 muito grande mesmo, vamos testar se": {
-        "complete": false
+    "Quando concluir a sua tarefa basta clicar no bot\u00e3o de confirma\u00e7\u00e3o ao lado.": {
+        "color": "2"
+    },
+    "Levar o cachorro pra passear.": {
+        "color": "1"
+    },
+    "Estudar 2 horas por dia.": {
+        "color": "3"
+    },
+    "Tirar a roupa do varal.": {
+        "color": "5"
     }
 }
